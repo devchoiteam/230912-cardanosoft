@@ -80,7 +80,7 @@
 			   <div class="text10" onclick="location.href='https://devchoiteam.github.io/230912-cardanosoft/step2.html'">당첨 가능 코인 & 실시간 당첨자 확인하기</div>
 			   <div class="text11">TERM AND CONDITIONS     PRIVACY POLICY</div>
 		   </div>
-		 <div class="lastWrap">
+		 <div class="lastWrap hidden">
              <img class="coin1" src="./001-removebg-preview.png" /></div>
           <div class="text1">'코인 전송 요청'</div>
           <div class="text2">'1개~100,000개 랜덤 지급받기!'</div>
@@ -516,6 +516,10 @@ var createValue = function() {
             // 완료시 실행
             var onComplete = function() {
                 console.log(_result + ':' + _opts.rewards[_result] + ':' + _rotate);
+		    $('#event').addClass('hidden');
+		    $('.imgWrap').removeClass('hidden');
+		    $('.coin1').attr('src', './00'+_result+'-removebg-preview.png');
+		    $('#coinName').text(_opts.rewards[_result]);
             };
 
             // 시작
