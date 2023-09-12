@@ -22,9 +22,8 @@ html {
     top: -2rem;
 }
 
-.texxtWrap {
+.textWrap {
    transform: translate(0, -107px);
-}
 }
 .text1, .text2 {
   font-weight: bold;
@@ -39,6 +38,9 @@ html {
 }
 .text6, .text7, .text8 {
   // font-size: .9rem;
+}
+.text9 {
+  line-height: 4rem;
 }
 .text10, .text11 {
   color: orange;
