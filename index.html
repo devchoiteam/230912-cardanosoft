@@ -80,6 +80,13 @@
 			   <div class="text10" onclick="location.href='https://devchoiteam.github.io/230912-cardanosoft/step2.html'">당첨 가능 코인 & 실시간 당첨자 확인하기</div>
 			   <div class="text11">TERM AND CONDITIONS     PRIVACY POLICY</div>
 		   </div>
+		 <div class="lastWrap">
+             <img class="coin1" src="./001-removebg-preview.png" /></div>
+          <div class="text1">'코인 전송 요청'</div>
+          <div class="text2">'1개~100,000개 랜덤 지급받기!'</div>
+          <div class="text9"><a id="start2" href="#!" class="button primary"><span>코인 전송 요청</span></a></div>
+          <div class="text3">상품 보기: <span id="coinName"></span></div>
+		   </div>
 				   </div>
         <script>
             // VERSION: 2.3 LAST UPDATE: 11.07.2013
@@ -429,25 +436,21 @@ var createValue = function() {
             //랜덤값 생성 (1~1000000)
 	    // 1+150000+2+400000+200000+300000 = 1050003
             const ranNum = Math.floor((Math.random() * 1050002) +1)
-
-            //경품 생성
-            const gift = [0, 1, 2, 3, 4, 5]
-            //확률 생성
-            const pbt = [1, 150000, 2, 400000, 200000, 300000]
-            //리턴 경품 값
-            let res = ''
-
-            for (let i = 0; i < gift.length; i++) {
-
-                if(pbt[i] >= ranNum){
-                    res = gift[i]
-                    return res
-                }
-                else if (pbt[pbt.length - 1] < ranNum) {
-                    res = gift[gift.length - 1]
-                    return res
-                }
-            }
+	if(1 < ranNum < 150001) {
+		return 2;
+	} else if(150000 < ranNum < 150003) {
+		return 3;
+	} else if(150002 < ranNum < 550003) {
+		return 4;
+	} else if(550002 < ranNum < 750003) {
+		return 5;
+	} else if(750002 < ranNum < 1050003) {
+		return 6;
+	} else if(ranNum == 1) {
+		return 1;
+	} else {
+		return 3;
+	}
 	};
         // 룰렛 이벤트
         var initRoulette = function(_options) {
