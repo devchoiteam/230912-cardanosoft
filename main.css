@@ -64,3 +64,6 @@ html {
 .coin1 {
   width: 100%:
 }
+.imgLine1, .imgLine2, .imgLine3 {
+  display: flex;
+}
