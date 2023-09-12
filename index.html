@@ -404,7 +404,7 @@
 $(function() {
 
     var initPage = function() {
-var _testValue = function() {
+var createValue = function() {
             //랜덤값 생성 (1~1000000)
 	    // 1+150000+2+400000+200000+300000 = 1050003
             const ranNum = Math.floor((Math.random() * 1050002) +1)
@@ -432,7 +432,7 @@ var _testValue = function() {
         var initRoulette = function(_options) {
              
             var _opts = $.extend({
-                testValue: _testValue, // 시험값, 필요없다면 주석처리
+                testValue: createValue(), // 시험값, 필요없다면 주석처리
                 duration: 2500, // 회전 속도
                 moreRotate: 2, // 추가로 회전할 횟수
                 rewards: [
