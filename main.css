@@ -61,6 +61,12 @@ html {
 }
 
 // step2 실시간 코인 당첨자
+.imgWrap {
+  margin-top: 5rem;
+}
+.imgWrap img {
+  width: 100%;
+}
 .coin1 {
   width: 100%:
 }
