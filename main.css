@@ -59,7 +59,9 @@ html {
 .text11 {
   margin-top: 3rem;
 }
-
+.termBlank {
+  width: 5rem;
+}
 // step2 실시간 코인 당첨자
 .imgWrap {
   margin-top: 5rem;
