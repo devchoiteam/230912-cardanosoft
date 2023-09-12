@@ -7,7 +7,7 @@ html {
   margin-top: 6rem;
 }
 #event .stage { position: relative; width: 663px; height: 663px;}
-#start {
+#start, #start2 {
   background-color: orange;
   color: white;
   padding: 5px 60px;
