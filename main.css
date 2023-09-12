@@ -11,5 +11,24 @@ html {
   border-radius: 7px;
   text-decoration: none;
 }
-
-        
+.text1, .text2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.text3 {
+  font-weight: bold;
+  font-size: 3rem;  
+}
+.text4, .text5 {
+  font-size: 1.2rem;
+}
+.text6, .text7, .text8 {
+  // font-size: .9rem;
+}
+.text10, .text11 {
+  color: orange;
+  font-size: .9rem;
+}        
+.text11 {
+  margin-top: 10px;
+}
