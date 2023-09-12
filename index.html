@@ -411,7 +411,8 @@ $(function() {
             var _testValue = function() {
 		            const getPrize = function() {
             //랜덤값 생성 (1~1000000)
-            const ranNum = Math.floor((Math.random() * 999999) +1)
+	    // 1+150000+2+400000+200000+300000 = 1050003
+            const ranNum = Math.floor((Math.random() * 1050002) +1)
 
             //경품 생성
             const gift = [1, 2, 3, 4, 5, 6]
