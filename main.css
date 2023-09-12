@@ -41,7 +41,8 @@ html {
   // font-size: .9rem;
 }
 .text9 {
-  line-height: 4rem;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
 }
 .text10, .text11 {
   color: orange;
