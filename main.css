@@ -46,15 +46,15 @@ html {
 }
 
 .text9 {
-  margin: 2rem 0 0.5rem;
+  margin: 2rem 0 0.7rem;
   font-size: 1.1rem;
 }
 .text10, .text11 {
   color: orange;
-  font-size: .9rem;
+  font-size: .8rem;
 }        
 .text11 {
-  margin-top: 10px;
+  margin-top: 3rem;
 }
 
 // step2 실시간 코인 당첨자
