@@ -58,6 +58,8 @@ html {
 }        
 .text11 {
   margin-top: 3rem;
+  opacity: .8;
+    font-size: .5rem;
 }
 .termBlank {
   width: 5rem;
