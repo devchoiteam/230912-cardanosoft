@@ -78,3 +78,6 @@ html {
 .imgLine1, .imgLine2, .imgLine3 {
   display: flex;
 }
+.hidden {
+  display: none;
+}
