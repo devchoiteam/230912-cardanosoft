@@ -3,6 +3,9 @@ html {
   background: black; 
   color: white;
 }
+#event {
+  margin-top: 6rem;
+}
 #event .stage { position: relative; width: 663px; height: 663px;}
 #event #start {
   background-color: orange;
@@ -10,6 +13,16 @@ html {
   padding: 5px 60px;
   border-radius: 7px;
   text-decoration: none;
+}
+.roulletWrap {
+   transform: translate(0, -107px);
+}
+.roulletPin {
+  position: absolute;
+    width: 6rem;
+    left: calc(50% - 3rem);
+    top: -2rem;
+}
 }
 .text1, .text2 {
   font-weight: bold;
