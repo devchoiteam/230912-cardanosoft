@@ -85,3 +85,6 @@ html {
 .hidden {
   display: none;
 }
+.topBoxShadow {
+  box-shadow: 0px -6px 5px -6px gray;
+}
