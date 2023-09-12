@@ -35,11 +35,13 @@ html {
   font-size: 3rem;  
 }
 .text4, .text5 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
-.text6, .text7, .text8 {
-  // font-size: .9rem;
+.text6 {
+  margin-top: .5rem;
 }
+
 .text9 {
   margin: 1rem 0 0.5rem;
   font-size: 1.1rem;
