@@ -23,7 +23,8 @@ html {
 }
 
 .textWrap {
-   transform: translate(0, -107px);
+   transform: translate(0, -273px);
+  background-color: black;
 }
 .text1, .text2 {
   font-weight: bold;
