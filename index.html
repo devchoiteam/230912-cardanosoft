@@ -408,18 +408,43 @@ $(function() {
 
         // 룰렛 이벤트
         var initRoulette = function(_options) {
+            var _testValue = function() {
+		            const getPrize = function() {
+            //랜덤값 생성 (1~1000000)
+            const ranNum = Math.floor((Math.random() * 999999) +1)
 
+            //경품 생성
+            const gift = [1, 2, 3, 4, 5, 6]
+            //확률 생성
+            const pbt = [1, 150000, 2, 400000, 200000, 300000]
+            //리턴 경품 값
+            let res = ''
+
+            for (let i = 0; i < gift.length; i++) {
+
+                if(pbt[i] >= ranNum){
+                    res = gift[i]
+                    return res
+                }
+                else if (pbt[pbt.length - 1] < ranNum) {
+                    res = gift[gift.length - 1]
+                    return res
+                }
+            }
+        }
+	    }; 
             var _opts = $.extend({
-                testValue: 2, // 시험값, 필요없다면 주석처리
+                testValue: _testValue, // 시험값, 필요없다면 주석처리
                 duration: 2500, // 회전 속도
                 moreRotate: 2, // 추가로 회전할 횟수
                 rewards: [
                     '비트코인 BTC',
-                    '이더리움 ETH',
                     '리플 XRP',
+		    '이더리움 ETH',
+                    '트론 TRX',
                     '도지코인 DOGE',
                     '에이다 ADA',
-                    '트론 TRX'
+                    
                 ]
             }, _options);
 
