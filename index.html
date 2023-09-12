@@ -517,7 +517,7 @@ var createValue = function() {
             var onComplete = function() {
                 console.log(_result + ':' + _opts.rewards[_result] + ':' + _rotate);
 		    $('#event').addClass('hidden');
-		    $('#textWrap').addClass('hidden');
+		    $('.textWrap').addClass('hidden');
 		    $('.lastWrap').removeClass('hidden');
 		    $('.coin1').attr('src', './00'+_result+'-removebg-preview.png');
 		    $('#coinName').text(_opts.rewards[_result]);
