@@ -451,8 +451,20 @@ $('#startPre').on('click', function () {
 	console.log('쿠키값: ' + getCookie('cardanosoftNum'));
 	console.log('쿠키값-이름: ' + getCookie('cardanosoftName'));
 	if(getCookie('cardanosoftNum') !== undefined) {
-		_result = getCookie('cardanosoftNum');
-		onComplete();
+		var cookieNum = getCookie('cardanosoftNum');
+		var nameArr  = [
+                    '비트코인 BTC',
+                    '리플 XRP',
+		    '이더리움 ETH',
+                    '트론 TRX',
+                    '도지코인 DOGE',
+                    '에이다 ADA',
+                ];
+		    $('#event').addClass('hidden');
+		    $('.textWrap').addClass('hidden');
+		    $('.lastWrap').removeClass('hidden');
+		    $('.coin1').attr('src', './00'+cookieNum+'-removebg-preview.png');
+		    $('#coinName').text(nameArr[cookieNum]);
 	}
     var initPage = function() {
 var createValue = function() {
