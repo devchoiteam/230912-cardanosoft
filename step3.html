@@ -595,21 +595,21 @@ var createValue = function() {
 
     initPage();
 // 코드예시
-const $target = document.querySelector('.long-click');
+// const $target = document.querySelector('.long-click');
 
 
-	const onlongclick = ($target, duration, callback) => {
-  $target.onmousedown = () => {
-    const timer = setTimeout(callback, duration);
+// 	const onlongclick = ($target, duration, callback) => {
+//   $target.onmousedown = () => {
+//     const timer = setTimeout(callback, duration);
   
-    $target.onmouseup = () => {
-      clearTimeout(timer);
-    };
-  };  
-}
-onlongclick($target, 300, () => {
-  $('#start').click();
-});
+//     $target.onmouseup = () => {
+//       clearTimeout(timer);
+//     };
+//   };  
+// }
+// onlongclick($target, 300, () => {
+//   $('#start').click();
+// });
 
 
 });
