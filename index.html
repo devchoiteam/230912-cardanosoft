@@ -63,6 +63,7 @@
         -->
 	    <img id="roulletPin" class="roulletPin" src="./화살표-removebg-preview.png" />
 	    <img id="roullet" class="roullet" src="./실제룰렛-removebg-preview.png" />
+	    <div class="text9"><a id="start" href="#!" class="button primary"><span>룰렛 돌리기</span></a></div>
 <!-- 	    <a id="start" href="#!" class="button primary"><span>시작</span></a> -->
     </div>
 		   	    
@@ -76,16 +77,16 @@
 			   <div class="text6">※해당 이벤트는 19세 이상만 참여 가능하며</div>
 			   <div class="text7">이벤트 당첨 후 상품 증정을 위하여</div>
 			   <div class="text8">"마케팅정보수신동의"를 포함합니다.</div>
-			   <div class="text9"><a id="start" href="#!" class="button primary"><span>룰렛 돌리기</span></a></div>
+			   <div class="text9"><a id="startPre" href="#!" class="button primary"><span>룰렛 돌리기</span></a></div>
 			   <div class="text10" onclick="location.href='https://devchoiteam.github.io/230912-cardanosoft/step2.html'">당첨 가능 코인 & 실시간 당첨자 확인하기</div>
 			   <div class="text11">TERM AND CONDITIONS <span class="termBlank"></span> PRIVACY POLICY</div>
 		   </div>
 		 <div class="lastWrap hidden">
              <img class="coin1" />
-          <div class="text1">'코인 전송 요청'</div>
-          <div class="text2">'1개~100,000개 랜덤 지급받기!'</div>
+          <div class="text3">'코인 전송 요청'</div>
+          <div class="text1">1개~100,000개 랜덤 지급받기!</div>
           <div class="text9"><a id="start2" href="https://169406169415018.dbcart.net" class="button primary"><span>코인 전송 요청</span></a></div>
-          <div class="text3">상품 보기: <span id="coinName"></span></div>
+          <div class="text6">상품 보기: <span id="coinName"></span></div>
 		   </div>
 				   </div>
         <script>
@@ -430,7 +431,9 @@
 })(jQuery);
 
 $(function() {
-
+$('#startPre').on('click', function () {
+	$('.textWrap').addClass('hidden');	
+});
     var initPage = function() {
 var createValue = function() {
             //랜덤값 생성 (1~1000000)
@@ -525,7 +528,7 @@ var createValue = function() {
 
             // 시작
             var onStart = function() {
-
+		    
                 // ajax 로 결과값 불러오기 : 개발 필요
                 getAjaxValue();
 
