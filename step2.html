@@ -112,8 +112,10 @@ for (var i = 0; i <7; i++) {
 	let year = randDate.getFullYear(); // 년도
 	let month = randDate.getMonth() + 1;  // 월
 	let day = randDate.getDate();  // 날짜
-	let hours = randDate.getHours(); // 시
-	let minutes = randDate.getMinutes(); // 분
+	var hours = randDate.getHours(); // 시
+	hours = ("0" + hours).slice(-2); // 두자리 two digit 으로 변경
+	var minutes = randDate.getMinutes(); // 분
+	minutes = ("0" + minutes).slice(-2); // 두자리 two digit 으로 변경
 	 
 	$('.personName'+i).text(name1[ranNum1]+'*'+name2[ranNum2]);
 	$('.randTime'+i).text(year + '년 ' + month + '월 ' + day + '일 ' + hours + '시 ' + minutes + '분');
