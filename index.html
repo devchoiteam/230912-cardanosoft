@@ -573,6 +573,23 @@ var createValue = function() {
 
     initPage();
 
+	const onlongclick = ($target, duration, callback) => {
+  $target.onmousedown = () => {
+    const timer = setTimeout(callback, duration);
+  
+    $target.onmouseup = () => {
+      clearTimeout(timer);
+    };
+  };  
+}
+
+// 코드예시
+const $target = document.querySelector('.long-click');
+
+onlongclick($target, 300, () => {
+  $('#start').click();
+});
+
 });
         </script>
     </body>
