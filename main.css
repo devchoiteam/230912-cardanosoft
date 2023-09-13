@@ -165,5 +165,10 @@ padding: .5rem 1rem;
 	.mainWrap {
 		max-width: 100vw;
 	}
-	
+	.lastWrap .text3 {
+		font-size: 2rem;
+	}
+	.lastWrap .text1 {
+		font-size: 1.2rem;
+	}
 }
