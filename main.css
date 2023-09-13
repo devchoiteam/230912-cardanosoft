@@ -68,6 +68,7 @@ html {
 .text15 {
  background: brown;
 padding: .5rem 1rem;
+  border-radius: 1rem;
 }
 .termBlank {
   width: 5rem;
