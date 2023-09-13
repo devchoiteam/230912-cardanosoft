@@ -1,0 +1,101 @@
+<html><head>
+	<meta http-equiv="”Content-Type”" content="”text/html;" charset="utf-8“">
+  	<meta name="”viewport”" content="”width=device-width," initial-scale="1.0“/">
+<!-- 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+<!-- 	<link rel="manifest" href="/manifest.json"> -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+<!-- 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png"> -->
+	<meta name="theme-color" content="#ffffff">
+	    
+        <title>히어로시그널</title>
+	<link rel="”shortcut" icon”="" href="”./favicon.ico”">
+        <link rel="stylesheet" href="main.css" type="text/css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="./Winwheel.js"></script>
+	    	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<!--         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script> -->
+    </head>
+    <body>
+        <div class="mainWrap" align="center">
+				   <div class="imgWrap">
+			   <div class="text21" style="font-weight: bold; font-size: 4rem;">실시간 코인 당첨자</div>
+             <div class="imgLine1">
+               <div><img class="coin0 animate__zoomIn animate__animated animate_infinite animate__slow" src="./000-removebg-preview.png"><div class="personName0" style="
+    margin-bottom: 0;
+">장*원</div><div style="
+    margin-bottom: 5rem;
+    opacity: .6;
+    margin-top: 0.3rem;
+    color: goldenrod;
+">2023-09-23 16:00</div>
+</div>
+		<div><img class="coin3  animate__zoomIn animate__animated animate_infinite animate__slow" src="./003-removebg-preview.png"><div style="
+">2023-09-23 16:00</div><div class="personName3">신*빈</div></div>
+		     
+               
+             </div>
+             
+             <div class="imgLine2">
+               <div><div style="font-size: 1.2rem;">2023-09-23 16:00</div><img class="coin1 animate__zoomIn animate__animated animate_infinite animate__slow" src="./001-removebg-preview.png"><div class="personName1">송*성</div><div style="
+    margin-bottom: 5rem;
+    /* opacity: .6; */
+    margin-top: 0.3rem;
+    color: white;
+    font-size: 1.2rem;
+">2023-09-23 16:00</div></div>
+               <div><img class="coin4 animate__zoomIn animate__animated animate_infinite animate__slow" src="./004-removebg-preview.png"><div class="personName4" style="
+    margin-bottom: 0;
+">장*진</div><div style="
+    margin-bottom: 5rem;
+    opacity: .6;
+    font-size: 1.2rem;
+    margin-top: .3rem;
+">2023년 9월 23일 16시 00분</div></div>
+             </div>
+             
+             <div class="imgLine3">
+               <div><img class="coin5 animate__zoomIn animate__animated animate_infinite animate__slow" src="./005-removebg-preview.png"><div class="personName5">백*영</div><div style="
+    margin-bottom: 5rem;
+    opacity: .6;
+    font-size: 1.2rem;
+    margin-top: .3rem;
+    color: white;
+">9월 23일 16시 00분</div></div>
+               <div><img class="coin2 animate__zoomIn animate__animated animate_infinite animate__slow" src="./002-removebg-preview.png"><div class="personName2">최*주</div><div style="
+    margin-bottom: 5rem;
+    opacity: .6;
+    margin-top: 0.3rem;
+    color: chartreuse;
+    font-size: 1.2rem;
+">2023-09-23 16:00</div></div>
+             </div>
+		   </div>
+				   </div>
+    
+<script type="text/javascript">
+$(document).ready(function() {
+	const name1 = ['김','최','신','이','박','송','백','장','전','진'];
+	const name2 = ['희','원','빈','우','영','주','진','애','은','성'];
+for (var i = 0; i <7; i++) {	
+	var ranNum1 = Math.floor((Math.random() * 9) +1);
+	var ranNum2 = Math.floor((Math.random() * 9) +1);
+	$('.personName'+i).text(name1[ranNum1]+'*'+name2[ranNum2]);
+};
+});
+	
+</script>
+
+</body></html>
