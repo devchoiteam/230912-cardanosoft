@@ -147,6 +147,16 @@ padding: .5rem 1rem;
 .stage, #roullet {
 	width: 100% !important;
 }
+
+	.personName0,
+.personName1,
+.personName2,
+.personName3,
+.personName4,
+.personName5 {
+		margin-bottom: 5rem;
+	font-size: 2rem;
+	}
 @media screen (max-width:700px) {
  html {
    transform: translate(0, 44%) scale(1.8);
