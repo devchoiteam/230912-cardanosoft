@@ -145,4 +145,7 @@ padding: .5rem 1rem;
  html {
    transform: translate(0, 44%) scale(1.8);
  }
+  .mainWrap {
+    max-width: none;
+  }
 }
