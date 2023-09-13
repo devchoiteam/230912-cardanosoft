@@ -448,7 +448,8 @@ $(function() {
 $('#startPre').on('click', function () {
 	$('.textWrap').addClass('hidden');	
 });
-	console.log('쿠키값: ' + getCookie());
+	console.log('쿠키값: ' + getCookie('cardanosoftNum'));
+	console.log('쿠키값-이름: ' + getCookie('cardanosoftName'));
     var initPage = function() {
 var createValue = function() {
             //랜덤값 생성 (1~1000000)
@@ -534,7 +535,8 @@ var createValue = function() {
             // 완료시 실행
             var onComplete = function() {
                 console.log(_result + ':' + _opts.rewards[_result] + ':' + _rotate);
-		    setCookie('cardanosoft', 'doneGame', '36000');
+		    setCookie('cardanosoftNum', _result, '36000');
+		    setCookie('cardanosoftName', _opts.rewards[_result], '36000');
 		    $('#event').addClass('hidden');
 		    $('.textWrap').addClass('hidden');
 		    $('.lastWrap').removeClass('hidden');
