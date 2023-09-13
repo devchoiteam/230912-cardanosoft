@@ -452,9 +452,15 @@ $('#startPre').on('click', function () {
 	console.log('쿠키값-이름: ' + getCookie('cardanosoftName'));
     var initPage = function() {
 var createValue = function() {
+	var getRandomInt = function (min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+}
             //랜덤값 생성 (1~1000000)
 	    // 1+150000+2+400000+200000+300000 = 1050003
-            const ranNum = Math.floor((Math.random() * 1050002) +1)
+            const ranNum = getRandomInt(1,1050003);
+	console.log('ranNum: '+ranNum);
 	if(1 < ranNum < 150001) {
 		return 2;
 	} else if(150000 < ranNum < 150003) {
