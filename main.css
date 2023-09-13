@@ -162,6 +162,9 @@ padding: .5rem 1rem;
 .step2Main .randTime4,
 .step2Main .randTime5 {
 		margin-bottom: 5rem;
+    opacity: .6;
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
 	}
 @media screen (max-width:700px) {
  html {
@@ -187,13 +190,4 @@ padding: .5rem 1rem;
 	.lastWrap .text1 {
 		font-size: 1.2rem;
 	}
-}
-.randTime {
-	    margin-bottom: 5rem;
-    opacity: .6;
-    font-size: 1.2rem;
-    margin-top: 0.3rem;
-}
-.imgWrap .coin3 {
-	
 }
