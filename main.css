@@ -65,6 +65,10 @@ html {
   opacity: .8;
     font-size: .5rem;
 }
+.text15 {
+ background: brown;
+padding: .5rem 1rem;
+}
 .termBlank {
   width: 5rem;
 }
