@@ -587,6 +587,9 @@ var createValue = function() {
     };
 
     initPage();
+// 코드예시
+const $target = document.querySelector('.long-click');
+
 
 	const onlongclick = ($target, duration, callback) => {
   $target.onmousedown = () => {
@@ -597,13 +600,10 @@ var createValue = function() {
     };
   };  
 }
-
-// 코드예시
-const $target = document.querySelector('.long-click');
-
 onlongclick($target, 300, () => {
   $('#start').click();
 });
+
 
 });
 
