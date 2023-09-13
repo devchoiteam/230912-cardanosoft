@@ -65,10 +65,11 @@ html {
   opacity: .8;
     font-size: .5rem;
 }
-.text15 {
- background: brown;
+.trophy {
+ background: dimgrey;
 padding: .5rem 1rem;
   border-radius: 1rem;
+  opacity: .6;
 }
 .termBlank {
   width: 5rem;
