@@ -36,20 +36,34 @@
     <body>
         <div class="mainWrap" align="center">
 				   <div class="imgWrap">
-			   <div class="text1">실시간 코인 당첨자</div>
+			   <div class="text21">실시간 코인 당첨자</div>
              <div class="imgLine1">
-               <div><img class="coin1" src="./001-removebg-preview.png" /></div>
-               <div><img class="coin2" src="./002-removebg-preview.png" /></div>
+               <div><img class="coin1" src="./001-removebg-preview.png" /><div class="personName1"></div></div>
+               <div><img class="coin2" src="./002-removebg-preview.png" /><div class="personName2"></div></div>
              </div>
              
              <div class="imgLine2">
-               <div><img class="coin3" src="./003-removebg-preview.png" /></div>
-               <div><img class="coin4" src="./004-removebg-preview.png" /></div>
+               <div><img class="coin3" src="./003-removebg-preview.png" /><div class="personName3"></div></div>
+               <div><img class="coin4" src="./004-removebg-preview.png" /><div class="personName4"></div></div>
              </div>
              
              <div class="imgLine3">
-               <div><img class="coin5" src="./005-removebg-preview.png" /></div>
-               <div><img class="coin6" src="./006-removebg-preview.png" /></div>
+               <div><img class="coin5" src="./005-removebg-preview.png" /><div class="personName5"></div></div>
+               <div><img class="coin6" src="./006-removebg-preview.png" /><div class="personName6"></div></div>
              </div>
 		   </div>
 				   </div>
+    </body>
+<script type="text/javascript">
+$(document).ready(function() {
+	const name1 = ['김','최','신','이','박','송','백','장','전','진'];
+	const name2 = ['희','원','빈','우','영','주','진','애','은','성'];
+for (var i = 0; i <7; i++) {	
+	var ranNum1 = Math.floor((Math.random() * 9) +1);
+	var ranNum2 = Math.floor((Math.random() * 9) +1);
+	$('.personName'+i).text(name1[ranNum1]+'*'+name2[ranNum2]);
+};
+});
+	
+</script>
+</html>
