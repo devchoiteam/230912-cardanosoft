@@ -96,6 +96,6 @@ html {
   font-size: 3rem;
   margin: 3rem 0;
 }
-.cursorPointer::hover {
+.cursorPointer:hover {
   cursor: pointer;
 }
