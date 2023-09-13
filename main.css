@@ -112,7 +112,9 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #659cf4;
+/*   background-color: #659cf4; */
+  opacity: .7;
+  border-radius: 7px;
   transition: width 1s;
   user-select: none;
   pointer-events: none;
@@ -125,7 +127,7 @@ html {
 /*   font-size: 22px; */
   position: relative;
 /*   background: #febf00; */
-  display: flex;
+/*   display: flex; */
   justify-content: center;
   align-items: center;
 /*   border-radius: 5px; */
