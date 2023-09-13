@@ -3,6 +3,10 @@ html {
   background: black; 
   color: white;
 }
+.mainWrap {
+  maxWidth: 800px;
+  margin: 0 auto;
+}
 #event {
   margin-top: 6rem;
 }
