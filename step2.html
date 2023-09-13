@@ -63,20 +63,38 @@
 				   <div class="imgWrap">
 			   <div class="text21" style="font-weight: bold; font-size: 4rem;">실시간 코인 당첨자</div>
              <div class="imgLine1">
-               <div><img class="coin0 animate__zoomIn animate__animated animate_infinite animate__slow" src="./000-removebg-preview.png" /><div class="personName0"></div></div>
-		<div><img class="coin3  animate__zoomIn animate__animated animate_infinite animate__slow" src="./003-removebg-preview.png" /><div class="personName3"></div></div>
+               <div><img class="coin0 animate__zoomIn animate__animated animate_infinite animate__slow" src="./000-removebg-preview.png" />
+		       <div class="personName0"></div>
+	       <div class="randTime0"></div>
+	       </div>
+		<div><img class="coin3  animate__zoomIn animate__animated animate_infinite animate__slow" src="./003-removebg-preview.png" />
+			<div class="personName3"></div>
+		<div class="randTime3"></div>
+		</div>
 		     
                
              </div>
              
              <div class="imgLine2">
-               <div><img class="coin1 animate__zoomIn animate__animated animate_infinite animate__slow" src="./001-removebg-preview.png" /><div class="personName1"></div></div>
-               <div><img class="coin4 animate__zoomIn animate__animated animate_infinite animate__slow" src="./004-removebg-preview.png" /><div class="personName4"></div></div>
+               <div><img class="coin1 animate__zoomIn animate__animated animate_infinite animate__slow" src="./001-removebg-preview.png" />
+		       <div class="personName1"></div>
+	       <div class="randTime1"></div>
+	       </div>
+               <div><img class="coin4 animate__zoomIn animate__animated animate_infinite animate__slow" src="./004-removebg-preview.png" />
+		       <div class="personName4"></div>
+		<div class="randTime4"></div>
+	       </div>
              </div>
              
              <div class="imgLine3">
-               <div><img class="coin5 animate__zoomIn animate__animated animate_infinite animate__slow" src="./005-removebg-preview.png" /><div class="personName5"></div></div>
-               <div><img class="coin2 animate__zoomIn animate__animated animate_infinite animate__slow" src="./002-removebg-preview.png" /><div class="personName2"></div></div>
+               <div><img class="coin5 animate__zoomIn animate__animated animate_infinite animate__slow" src="./005-removebg-preview.png" />
+		       <div class="personName5"></div>
+	       <div class="randTime5"></div>
+	       </div>
+               <div><img class="coin2 animate__zoomIn animate__animated animate_infinite animate__slow" src="./002-removebg-preview.png" />
+		       <div class="personName2"></div>
+	       <div class="randTime2"></div>
+	       </div>
              </div>
 		   </div>
 				   </div>
@@ -88,7 +106,17 @@ $(document).ready(function() {
 for (var i = 0; i <7; i++) {	
 	var ranNum1 = Math.floor((Math.random() * 9) +1);
 	var ranNum2 = Math.floor((Math.random() * 9) +1);
+	var ranNum3 = Math.floor((Math.random() * 6) +1); // 0~5 사이의 숫자
+	let today = new Date();
+	let randDate = new Date(today.getTime() - ranNum3 * 60000);
+	let year = randDate.getFullYear(); // 년도
+	let month = randDate.getMonth() + 1;  // 월
+	let day = randDate.getDate();  // 날짜
+	let hours = randDate.getHours(); // 시
+	let minutes = randDate.getMinutes(); // 분
+	 
 	$('.personName'+i).text(name1[ranNum1]+'*'+name2[ranNum2]);
+	$('.randTime'+i).text(year + '년 ' + month + '월 ' + day + '일 ' + hours + '시 ' + minutes + '분');
 };
 });
 	
