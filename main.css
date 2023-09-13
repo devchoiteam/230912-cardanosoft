@@ -141,3 +141,142 @@ padding: .5rem 1rem;
 .imgLine1 {
   font-size: 1.2rem;
 }
+@media screen (max-width:700px) {
+body {
+  font-size: 2rem;
+}
+#event {
+  margin-top: 6rem;
+}
+#event .stage { position: relative; width: 663px; height: 663px;}
+#start, #start2, #startPre, #start3 {
+  background-color: orange;
+  color: white;
+  padding: 5px 60px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.roulletPin {
+  z-index: 10000;
+  position: absolute;
+    width: 6rem;
+    left: calc(50% - 3rem);
+    top: -2rem;
+}
+
+.textWrap {
+   transform: translate(0, -81%);
+  background-color: black;
+}
+.text1 {
+  padding-top: 2.5rem;
+}
+.text1, .text2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.text3 {
+  font-weight: bold;
+  font-size: 5rem;  
+}
+.text4 {
+  margin-top: 0.7rem;
+}
+.text4, .text5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.text6 {
+  margin-top: .5rem;
+}
+
+.text9 {
+  margin: 2rem 0 0.7rem;
+  font-size: 1.1rem;
+}
+.text10, .text11, .text15 {
+  color: orange;
+  font-size: .8rem;
+}        
+.text11 {
+  margin-top: 3rem;
+  opacity: .8;
+    font-size: .5rem;
+}
+.trophy {
+ background: dimgrey;
+padding: .5rem 1rem;
+  border-radius: 1rem;
+  opacity: .6;
+}
+.termBlank {
+  width: 5rem;
+}
+// step2 실시간 코인 당첨자
+.imgWrap {
+  margin-top: 5rem;
+}
+.imgWrap img {
+  width: 100%;
+}
+.imgWrap .text1 {
+      font-weight: bold;
+    font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.coin1 {
+  width: 70%;
+}
+.imgLine1, .imgLine2, .imgLine3 {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.topBoxShadow {
+  box-shadow: 0px -6px 5px -6px gray;
+}
+.text21 {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+.cursorPointer:hover {
+  cursor: pointer;
+}
+
+/* Press Effect */
+.long-click:active::after {
+  width: 100%;
+}
+
+.long-click:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+/*   background-color: #659cf4; */
+  opacity: .7;
+  border-radius: 7px;
+  transition: width 1s;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ---------------- */
+.long-click {
+/*   width: 340px; */
+/*   height: 60px; */
+/*   font-size: 22px; */
+  position: relative;
+/*   background: #febf00; */
+/*   display: flex; */
+  justify-content: center;
+  align-items: center;
+/*   border-radius: 5px; */
+}
+.imgLine1 {
+  font-size: 1.2rem;
+}
+}
