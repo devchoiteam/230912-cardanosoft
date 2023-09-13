@@ -450,6 +450,10 @@ $('#startPre').on('click', function () {
 });
 	console.log('쿠키값: ' + getCookie('cardanosoftNum'));
 	console.log('쿠키값-이름: ' + getCookie('cardanosoftName'));
+	if(getCookie('cardanosoftNum') !== undefined) {
+		_result = getCookie('cardanosoftNum');
+		onComplete();
+	}
     var initPage = function() {
 var createValue = function() {
 	var getRandomInt = function (min, max) {
