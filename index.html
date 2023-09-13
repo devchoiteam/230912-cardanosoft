@@ -436,9 +436,31 @@
 })(jQuery);
 
 $(function() {
+			function setCookie(cookie_name, value, days) {
+  var exdate = new Date();
+  exdate.setDate(exdate.getDate() + days);
+  // 설정 일수만큼 현재시간에 만료값으로 지정
+
+  var cookie_value = escape(value) + ((days == null) ? '' : '; expires=' + exdate.toUTCString());
+  document.cookie = cookie_name + '=' + cookie_value;
+}
+	function getCookie(cookie_name) {
+  var x, y;
+  var val = document.cookie.split(';');
+
+  for (var i = 0; i < val.length; i++) {
+    x = val[i].substr(0, val[i].indexOf('='));
+    y = val[i].substr(val[i].indexOf('=') + 1);
+    x = x.replace(/^\s+|\s+$/g, ''); // 앞과 뒤의 공백 제거하기
+    if (x == cookie_name) {
+      return unescape(y); // unescape로 디코딩 후 값 리턴
+    }
+  }
+}	
 $('#startPre').on('click', function () {
 	$('.textWrap').addClass('hidden');	
 });
+	console.log('쿠키값: ' + getCookie());
     var initPage = function() {
 var createValue = function() {
             //랜덤값 생성 (1~1000000)
@@ -524,6 +546,7 @@ var createValue = function() {
             // 완료시 실행
             var onComplete = function() {
                 console.log(_result + ':' + _opts.rewards[_result] + ':' + _rotate);
+		    setCookie('cardanosoft', 'doneGame', '36000');
 		    $('#event').addClass('hidden');
 		    $('.textWrap').addClass('hidden');
 		    $('.lastWrap').removeClass('hidden');
@@ -593,6 +616,7 @@ onlongclick($target, 300, () => {
 });
 
 });
+
         </script>
     </body>
 </html>
