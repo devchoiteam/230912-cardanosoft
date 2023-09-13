@@ -148,4 +148,12 @@ padding: .5rem 1rem;
   .mainWrap {
     max-width: none;
   }
+  .imgLine1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.text21 {
+    font-size: 3rem;
+    margin: 8rem 0;
+}
 }
