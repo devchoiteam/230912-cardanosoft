@@ -148,12 +148,12 @@ padding: .5rem 1rem;
 	width: 100% !important;
 }
 
-	.personName0,
-.personName1,
-.personName2,
-.personName3,
-.personName4,
-.personName5 {
+	.step2Main .personName0,
+.step2Main .personName1,
+.step2Main .personName2,
+.step2Main .personName3,
+.step2Main .personName4,
+.step2Main .personName5 {
 		margin-bottom: 5rem;
 	font-size: 2rem;
 	}
